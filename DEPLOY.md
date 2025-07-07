@@ -88,6 +88,20 @@ export default defineConfig({
 - 안정적인 캐싱 시스템
 - 최신 보안 정책 적용
 
+## 🔄 최신 업데이트 (2025.07.08 - 추가)
+
+### pnpm 버전 일치 문제 해결
+
+- GitHub Actions에서 pnpm 버전을 자동으로 package.json의 packageManager 필드에서 읽도록 수정
+- "Multiple versions of pnpm specified" 오류 해결
+- package.json의 predeploy 스크립트를 npm에서 pnpm으로 변경
+
+### 변경사항
+
+- GitHub Actions: `pnpm/action-setup@v4` (버전 자동 감지)
+- package.json: packageManager 필드 활용
+- 일관된 패키지 매니저 사용
+
 ## 🔍 트러블슈팅
 
 ### 1. 빈 페이지가 표시되는 경우
