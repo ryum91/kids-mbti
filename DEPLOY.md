@@ -67,7 +67,7 @@ export default defineConfig({
 - **자동 빌드**: TypeScript 컴파일 + Vite 빌드
 - **캐시 최적화**: pnpm 캐시로 빌드 속도 향상
 
-## 🔄 최신 업데이트 (2025.07.07)
+## 🔄 최신 업데이트 (2025.07.08)
 
 ### GitHub Actions 최신화
 
@@ -75,6 +75,12 @@ export default defineConfig({
 - `actions/deploy-pages@v4` 사용 (최신 안정 버전)
 - `pnpm/action-setup@v4` 사용 (pnpm v9 지원)
 - `actions/cache@v4` 사용 (성능 향상)
+
+### pnpm 캐시 오류 해결
+
+- Node.js setup에서 npm 캐시 대신 pnpm 캐시 사용하도록 수정
+- `cache: 'pnpm'` 설정으로 pnpm-lock.yaml 파일 인식
+- pnpm/action-setup을 먼저 설치한 후 Node.js setup 실행
 
 ### 개선사항
 
