@@ -5,9 +5,12 @@ import QuizPage from './pages/QuizPage';
 import ResultPage from './pages/ResultPage';
 
 function App() {
+  // GitHub Pages 배포시에만 basepath 적용
+  const basename = import.meta.env.PROD ? '/kids-mbti' : '';
+
   return (
     <QuizProvider>
-      <Router>
+      <Router basename={basename}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/quiz" element={<QuizPage />} />

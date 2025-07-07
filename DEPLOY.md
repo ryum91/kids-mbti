@@ -102,6 +102,21 @@ export default defineConfig({
 - package.json: packageManager 필드 활용
 - 일관된 패키지 매니저 사용
 
+## 🔄 최신 업데이트 (2025.07.08 - basepath 설정)
+
+### React Router basepath 설정 추가
+
+- GitHub Pages 배포를 위한 React Router basepath 설정
+- 개발환경과 프로덕션환경 자동 구분
+- vite.config.ts와 App.tsx에서 일관된 경로 처리
+
+### 변경사항
+
+- **vite.config.ts**: 빌드시에만 `/kids-mbti/` base 적용
+- **App.tsx**: 프로덕션에서만 basename 적용
+- 개발환경: `http://localhost:5175/` (basepath 없음)
+- 프로덕션: `https://username.github.io/kids-mbti/` (basepath 포함)
+
 ## 🔍 트러블슈팅
 
 ### 1. 빈 페이지가 표시되는 경우
