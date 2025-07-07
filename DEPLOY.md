@@ -67,6 +67,21 @@ export default defineConfig({
 - **자동 빌드**: TypeScript 컴파일 + Vite 빌드
 - **캐시 최적화**: pnpm 캐시로 빌드 속도 향상
 
+## 🔄 최신 업데이트 (2025.07.07)
+
+### GitHub Actions 최신화
+
+- `actions/upload-pages-artifact@v3` 사용 (v2 deprecated 해결)
+- `actions/deploy-pages@v4` 사용 (최신 안정 버전)
+- `pnpm/action-setup@v4` 사용 (pnpm v9 지원)
+- `actions/cache@v4` 사용 (성능 향상)
+
+### 개선사항
+
+- 더 빠른 빌드 속도
+- 안정적인 캐싱 시스템
+- 최신 보안 정책 적용
+
 ## 🔍 트러블슈팅
 
 ### 1. 빈 페이지가 표시되는 경우
